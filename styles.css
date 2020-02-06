@@ -1,0 +1,433 @@
+/* PALETA DE CORES: #090917 ,#0b00fb, #18a6ed, #90daff, #ff2bff, #f9f392,  */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* background: url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80") no-repeat center center fixed; */
+  background: url("images/nasa-unsplash.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Squada One", cursive;
+  margin-bottom: 30px;
+}
+
+h1 {
+  /* font-family: "varela round", sans-serif; */
+  font-family: "Squada One", cursive;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: #0b00fb;
+  /* text-shadow: 3px 2px 3px #09091749; */
+  text-shadow: 3px 2px 3px #e4e3e2;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.iss-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row wrap;
+  font-size: 25px;
+  margin: 30px;
+}
+
+.iss-actions,
+.iss-data {
+  color: #090917;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.iss-data > * {
+  margin: 6px 0;
+}
+
+span {
+  font-family: "montserrat", sans-serif;
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 684px) {
+  .iss-container {
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  .iss-data {
+    margin-bottom: 30px;
+  }
+}
+
+#where-am-i {
+  box-shadow: 0 10px 14px -7px rgba(0, 0, 0, 0.7);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#0b00fb),
+    to(#90daff)
+  );
+  background-image: linear-gradient(to right, #0b00fb, #90daff);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+#iss-visibility {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#iss-visibility > i {
+  padding: 5px;
+}
+
+#iss-visibility > span {
+  font-size: 15px;
+  padding: 8px;
+  font-weight: bold;
+}
+
+@-webkit-keyframes moving-colors {
+  0% {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#0b00fb),
+      color-stop(#0b00fb),
+      color-stop(#0b00fb),
+      color-stop(#90daff),
+      color-stop(#90daff),
+      to(#90daff)
+    );
+    background-image: linear-gradient(
+      to right,
+      #0b00fb,
+      #0b00fb,
+      #0b00fb,
+      #90daff,
+      #90daff,
+      #90daff
+    );
+  }
+  25% {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#90daff),
+      color-stop(#0b00fb),
+      color-stop(#0b00fb),
+      color-stop(#0b00fb),
+      color-stop(#90daff),
+      to(#90daff)
+    );
+    background-image: linear-gradient(
+      to right,
+      #90daff,
+      #0b00fb,
+      #0b00fb,
+      #0b00fb,
+      #90daff,
+      #90daff
+    );
+  }
+  50% {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#90daff),
+      color-stop(#90daff),
+      color-stop(#0b00fb),
+      color-stop(#0b00fb),
+      color-stop(#0b00fb),
+      to(#90daff)
+    );
+    background-image: linear-gradient(
+      to right,
+      #90daff,
+      #90daff,
+      #0b00fb,
+      #0b00fb,
+      #0b00fb,
+      #90daff
+    );
+  }
+  75% {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#0b00fb),
+      color-stop(#90daff),
+      color-stop(#90daff),
+      color-stop(#0b00fb),
+      color-stop(#0b00fb),
+      to(#0b00fb)
+    );
+    background-image: linear-gradient(
+      to right,
+      #0b00fb,
+      #90daff,
+      #90daff,
+      #0b00fb,
+      #0b00fb,
+      #0b00fb
+    );
+  }
+  100% {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#0b00fb),
+      color-stop(#0b00fb),
+      color-stop(#90daff),
+      color-stop(#90daff),
+      color-stop(#90daff),
+      to(#0b00fb)
+    );
+    background-image: linear-gradient(
+      to right,
+      #0b00fb,
+      #0b00fb,
+      #90daff,
+      #90daff,
+      #90daff,
+      #0b00fb
+    );
+  }
+}
+
+@keyframes moving-colors {
+  0% {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#0b00fb),
+      color-stop(#0b00fb),
+      color-stop(#0b00fb),
+      color-stop(#90daff),
+      color-stop(#90daff),
+      to(#90daff)
+    );
+    background-image: linear-gradient(
+      to right,
+      #0b00fb,
+      #0b00fb,
+      #0b00fb,
+      #90daff,
+      #90daff,
+      #90daff
+    );
+  }
+  25% {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#90daff),
+      color-stop(#0b00fb),
+      color-stop(#0b00fb),
+      color-stop(#0b00fb),
+      color-stop(#90daff),
+      to(#90daff)
+    );
+    background-image: linear-gradient(
+      to right,
+      #90daff,
+      #0b00fb,
+      #0b00fb,
+      #0b00fb,
+      #90daff,
+      #90daff
+    );
+  }
+  50% {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#90daff),
+      color-stop(#90daff),
+      color-stop(#0b00fb),
+      color-stop(#0b00fb),
+      color-stop(#0b00fb),
+      to(#90daff)
+    );
+    background-image: linear-gradient(
+      to right,
+      #90daff,
+      #90daff,
+      #0b00fb,
+      #0b00fb,
+      #0b00fb,
+      #90daff
+    );
+  }
+  75% {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#0b00fb),
+      color-stop(#90daff),
+      color-stop(#90daff),
+      color-stop(#0b00fb),
+      color-stop(#0b00fb),
+      to(#0b00fb)
+    );
+    background-image: linear-gradient(
+      to right,
+      #0b00fb,
+      #90daff,
+      #90daff,
+      #0b00fb,
+      #0b00fb,
+      #0b00fb
+    );
+  }
+  100% {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#0b00fb),
+      color-stop(#0b00fb),
+      color-stop(#90daff),
+      color-stop(#90daff),
+      color-stop(#90daff),
+      to(#0b00fb)
+    );
+    background-image: linear-gradient(
+      to right,
+      #0b00fb,
+      #0b00fb,
+      #90daff,
+      #90daff,
+      #90daff,
+      #0b00fb
+    );
+  }
+}
+
+#where-am-i:hover {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#3025ff),
+    to(#a7dffc)
+  );
+  background-image: linear-gradient(to right, #3025ff, #a7dffc);
+}
+
+#where-am-i:active {
+  position: relative;
+  top: 1px;
+}
+
+.split-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row nowrap;
+}
+
+.border {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#0b00fb),
+    color-stop(#90daff),
+    to(#ff2bff)
+  );
+  background-image: linear-gradient(to right, #0b00fb, #90daff, #ff2bff);
+  padding: 1px;
+  border-radius: 10px;
+  -webkit-box-flex: 6;
+  flex: 6;
+}
+
+#mapid {
+  height: 350px;
+  margin: 3px;
+  border-radius: inherit;
+}
+
+iframe {
+  margin-left: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  -webkit-box-flex: 5;
+  flex: 5;
+  height: auto;
+}
+
+@media (max-width: 981px) {
+  .split-container {
+    display: block;
+  }
+
+  iframe {
+    width: 100%;
+    height: 270px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+
+/* @media only screen and (max-width: 594px) {
+  iframe {
+    width: 100%;
+    height: 270px;
+  }
+} */
