@@ -6,7 +6,6 @@
 
 body {
   margin: 0;
-  /* background: url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80") no-repeat center center fixed; */
   background: url("images/nasa-unsplash.jpg") no-repeat center center fixed;
   background-size: cover;
   font-family: "Squada One", cursive;
@@ -423,4 +422,22 @@ iframe {
     margin-top: 10px;
     margin-left: 0;
   }
+}
+
+footer {
+  text-align: center;
+  margin: 30px;
+}
+
+footer a {
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.signature {
+  font-size: 15px;
+  color: #f9f392;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  font-weight: 800;
 }
